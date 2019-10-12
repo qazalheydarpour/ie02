@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+        <head>
+
+                <title>calculator</title>
+
+                <link href="https://fonts.googleapis.com/css?family=Oswald:300,700|Varela+Round" rel="stylesheet">
+
+                <meta charset="UTF-8">
+
+              </head>
+
+    <body>
+
+        <div>
+
+             <button  onclick="calculator()">use calculator</button>
+
+        </div>
+
+
+
+
+
+    <script type="text/javascript" >
+
+        function calculator() {
+
+            let text;let answer;
+
+            let operator = prompt("select youre operator(+ , - , * , / , ^)",);
+
+            if(operator !=null){
+
+                let num1 = prompt("Enter number1");
+
+                let num2 = prompt("Enter number2");
+
+            switch(operator) {
+
+                case "+":
+
+                answer=+num1+ +num2;
+
+                alert(num1+operator+num2+"="+answer);
+
+                break;
+
+                case "-":
+
+                answer=+num1- +num2;
+
+                alert(num1+operator+num2+"="+answer);
+
+                break;
+
+                case "*":
+
+                answer=+num1* +num2;
+
+                alert(num1+operator+num2+"="+answer);
+
+                break;
+
+                case "/":
+
+                answer=+num1/ +num2;
+
+                alert(num1+operator+num2+"="+answer);
+
+                break;
+
+                case "^":
+
+                answer=Math.pow(+num1,+num2);
+
+                alert(num1+operator+num2+"="+answer);
+
+                break;
+
+                default:
+
+                alert(" not defined!")
+
+            }
+
+
+
+        }
+
+        else alert(" stopped!")
+
+        }
+
+    </script>
+
+    </body>
+
+</html>
